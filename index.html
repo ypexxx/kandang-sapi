@@ -8,25 +8,30 @@
         body {
             margin: 0;
             padding: 0;
+            background-color: black;
         }
         .tv {
-            position: relative;
-            width: 1920px;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
         }
         iframe {
-            width: 1920px;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-    <div id="twitch-embed" class="tv"></div>
-    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-    <script type="text/javascript">
-        new Twitch.Player("twitch-embed", {
-          channel: "livebolahd"
-        });
-      </script>
+<!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    channel: "kandang_sapi_cerdas"
+  });
+</script>
 </body>
 </html>
